@@ -1,0 +1,56 @@
+
+
+        $create users;
+
+
+
+        $put users key=HitHard name=Joseph email=abc@gmail.com;
+
+
+
+        $put users key=HardHit name=Joe phone.No=1234567891;
+
+
+
+        $get users HardHit;
+
+
+        HardHit:           name:            Joe Version: 1
+                       phone.No:     1234567891 Version: 1
+
+
+
+        $get users HitHard;
+
+
+        HitHard:           name:         Joseph Version: 1
+                          email:  abc@gmail.com Version: 1
+
+
+
+        $create Another_Table;
+
+
+
+        $put Another_Table key=KeyVal Value="Wow";
+
+
+
+        $put Another_Table key=KeyVal1 Value="Good";
+
+
+
+        $get Another_Table KeyVal;
+
+
+         KeyVal:          Value:          "Wow" Version: 1
+
+
+
+        $get users HitHard;
+
+
+        HitHard:           name:         Joseph Version: 1
+                          email:  abc@gmail.com Version: 1
+
+
